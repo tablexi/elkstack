@@ -1,5 +1,5 @@
 instance_name = node['elkstack']['config']['logstash']['instance_name']
-server = normal['logstash']['instance'][instance_name]
+server = default['logstash']['instance'][instance_name]
 server['bind_host_interface'] = '127.0.0.1'
 server['enable_embedded_es'] = false
 server['elasticsearch_cluster'] = 'logstash'

@@ -9,7 +9,7 @@ default['elkstack']['config']['logstash']['agent']['my_templates'] = {
 #   'output_stdout'        => 'logstash/output_stdout.conf.erb'
 # }
 
-agent = normal['logstash']['instance'][agent_name]
+agent = default['logstash']['instance'][agent_name]
 
 agent['bind_host_interface'] = '127.0.0.1'
 agent['enable_embedded_es'] = false
